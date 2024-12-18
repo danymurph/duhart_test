@@ -33,7 +33,7 @@ body {
 .popout-menu {
     position: fixed;
     top: 0;
-    left: -100%; /* Start off-screen */
+    right: -100%; /* Start off-screen */
     width: 250px;
     height: 100%;
     background-color: #8C4A37;
