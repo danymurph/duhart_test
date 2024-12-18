@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Davyon Duhart Realty</title>
+    <title>Davyon Duhart Realty</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
+        <div class="logo">
+            <a href="index.html">Davyon Realty</a>
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="listings.html">Listings</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="prequalify.html">Get Pre-Qualified</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">Contact</a></li>
+            <li><a href="prequalify.html">Contact</a></li>
+
         </ul>
     </nav>
 
-    <!-- Home Section -->
-    <section>
-        <h1>Welcome to Davyon Duhart Realty</h1>
-        <p>Helping you find your dream home with expertise and care.</p>
-        <img src="images/agent_photo.jpg" alt="Agent Photo" width="200px">
-        <p>Contact: <a href="mailto:agent@example.com">agent@example.com</a> | Phone: (123) 456-7890</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your Dream Home Awaits</h1>
+            <p>Let us help you find the perfect place to call home.</p>
+            <a href="listings.html" class="button">View Listings</a>
+        </div>
+    </header>
+
+    <!-- Featured Listings -->
+    <section id="featured-listings">
+        <h2>Featured Listings</h2>
+        <div class="listings-container">
+            <div class="listing-card">
+                <img src="images/house1.jpg" alt="House 1">
+                <div class="listing-details">
+                    <h3>123 Main Street</h3>
+                    <p>$500,000 | 3 Bed | 2 Bath</p>
+                </div>
+            </div>
+            <div class="listing-card">
+                <img src="images/house2.jpg" alt="House 2">
+                <div class="listing-details">
+                    <h3>456 Oak Avenue</h3>
+                    <p>$350,000 | 2 Bed | 1 Bath</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
