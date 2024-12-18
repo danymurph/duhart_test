@@ -6,12 +6,13 @@
 }
 
 body {
-    font-family: 'Lobster', 'Great Vibes', sans-serif; /* Fancy, popping fonts */
+    font-family: 'Lobster', 'Great Vibes', sans-serif;
     line-height: 1.6;
-    color: #FFFFFF; /* White text */
-    background-color: #241773; /* Deep purple background */
-    overflow-x: hidden; /* Prevent scrolling when menu is open */
-    padding-top: 76.07px; /* Adjust for header height */
+    color: #FFFFFF;
+    background-color: #241773;
+    overflow-x: hidden;
+    padding-top: 97px;
+    padding-bottom: 20px; /* Added bottom padding for spacing */
 }
 
 /* Fixed Header Bar */
@@ -20,80 +21,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #241773; /* Deep purple */
-    color: #FFD700; /* Gold text */
+    background-color: #241773;
+    color: #FFD700;
     padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-bottom: 3px solid #FFD700; /* Optional gold border for style */
+    border-bottom: 3px solid #FFD700;
     z-index: 1000;
-}
-
-.header-content {
-    text-align: center;
+    text-align: center; /* Center header text */
 }
 
 .header-content h1 {
     font-size: 2.5em;
-    color: #FFD700; /* Gold text for the header */
+    color: #FFD700;
     margin: 0;
-}
-
-/* Menu Toggle Button */
-.menu-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    color: #FFD700; /* Gold toggle icon */
-}
-
-.menu-toggle:focus {
-    outline: none;
-}
-
-/* Popout Menu */
-.popout-menu {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Start off-screen */
-    width: 250px;
-    height: 100%;
-    background-color: #4A2883; /* Slightly lighter purple for the menu */
-    color: #FFFFFF; /* White text */
-    transition: 0.3s ease-in-out;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.popout-menu.open {
-    right: 0; /* Slide in */
-}
-
-.popout-menu ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 50px;
-}
-
-.popout-menu ul li {
-    margin: 20px 0;
-}
-
-.popout-menu ul li a {
-    color: #FFD700; /* Gold links */
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.popout-menu ul li a:hover {
-    color: #FFFFFF; /* White hover effect */
 }
 
 /* Hero Section */
@@ -103,20 +43,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF; /* White text */
     text-align: center;
     position: relative;
-}
-
-.hero:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
-    z-index: 1;
+    padding: 20px; /* Added padding for better spacing */
+    border-radius: 15px; /* Add rounded corners */
+    margin: 20px; /* Center the hero section */
 }
 
 .hero-content {
@@ -125,9 +56,9 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.5em; /* Larger for visual impact */
+    font-size: 3.5em;
     margin-bottom: 10px;
-    color: #FFD700; /* Gold text */
+    color: #FFD700;
 }
 
 .hero p {
@@ -136,47 +67,50 @@ body {
 }
 
 .hero .button {
-    padding: 10px 20px;
-    background-color: #FFD700; /* Gold button */
-    color: #241773; /* Deep purple text */
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #241773;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
-    border: 2px solid #241773; /* Deep purple border */
+    border: 2px solid #241773;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .hero .button:hover {
-    background-color: #4A2883; /* Slightly lighter purple */
-    color: #FFD700; /* Gold text on hover */
+    background-color: #4A2883;
+    color: #FFD700;
+    transform: scale(1.1);
 }
 
 /* Listings Section */
 #featured-listings {
-    padding: 50px 20px;
+    padding: 60px 20px; /* Increased padding for spacing */
     text-align: center;
-    background-color: #241773; /* Deep purple */
+    background-color: #241773;
 }
 
 #featured-listings h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #FFD700; /* Gold for section headers */
+    margin-bottom: 40px; /* Added more space below header */
+    color: #FFD700;
 }
 
 .listings-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 30px; /* Increased gap between items */
+    padding: 0 20px; /* Centered grid with padding */
 }
 
 .listing-card {
-    background-color: #FFFFFF; /* White cards for contrast */
-    color: #241773; /* Deep purple text */
+    background-color: #FFFFFF;
+    color: #241773;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Centered content in cards */
 }
 
 .listing-card:hover {
@@ -186,29 +120,50 @@ body {
 
 .listing-card img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Fixed height for uniform appearance */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 .listing-details {
-    padding: 15px;
+    padding: 20px; /* Added more padding for better spacing */
 }
 
 .listing-details h3 {
-    font-size: 1.5em;
-    color: #241773; /* Deep purple */
-    margin-bottom: 5px;
+    font-size: 1.8em; /* Larger for better readability */
+    color: #241773;
+    margin-bottom: 10px;
 }
 
 .listing-details p {
     font-size: 1.2em;
-    color: #777; /* Muted purple for detail text */
+    color: #777;
 }
 
 /* Footer */
 footer {
-    background-color: #4A2883; /* Slightly lighter purple */
-    color: #FFFFFF; /* White text */
+    background-color: #4A2883;
+    color: #FFFFFF;
     text-align: center;
-    padding: 15px 20px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 30px; /* Increased spacing above footer */
+    font-size: 1.2em; /* Slightly larger text */
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .listings-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        font-size: 18px;
+    }
 }
