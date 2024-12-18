@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- Popout Menu Button -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
-    </button>
-
-    <!-- Popout Menu -->
-    <nav class="popout-menu" id="popout-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="listings.html">Listings</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="prequalify.html">Get Pre-Qualified</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
-    </nav>
-
+    <div id="menu-placeholder"></div>
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('menu-placeholder').innerHTML = html;
+            })
+            .then(() => {
+                // Reattach the menu toggle functionality after loading the menu
+                const menuToggle = document.getElementById("menu-toggle");
+                const popoutMenu = document.getElementById("popout-menu");
+    
+                menuToggle.addEventListener("click", function () {
+                    popoutMenu.classList.toggle("open");
+                });
+            })
+            .catch(err => console.error('Error loading menu:', err));
+    </script>
+    
     <!-- About Section -->
     <section>
         <h1>About Me</h1>
