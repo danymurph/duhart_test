@@ -47,7 +47,7 @@ body {
 }
 
 .popout-menu.open {
-    left: 0; /* Slide in */
+    right: 0; /* Slide in */
 }
 
 .popout-menu ul {
