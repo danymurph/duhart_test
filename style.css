@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', serif; /* Times New Roman for all other text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for all other text */
     line-height: 1.6;
     color: #000000; /* Black text */
     background-color: #FFFFFF; /* White background */
@@ -32,7 +32,7 @@ body {
 }
 
 .header-content h1 {
-    font-family: 'Windsong', cursive; /* Windsong font for "Duhart Realty" header */
+    font-family: 'Ballet', cursive; /* Windsong font for "Duhart Realty" header */
     font-size: 2.5em;
     color: #000000; /* Black text */
     text-shadow: 2px 2px 5px #6A0DAD; /* Adjust the shadow intensity and color here */
@@ -60,7 +60,7 @@ main {
     cursor: pointer;
     z-index: 1000;
     color: #000000; /* Black text */
-    font-family: 'Trirong', serif; /* Trirong font for menu */
+    font-family: 'Antic Didone', serif; /* Trirong font for menu */
 }
 
 .menu-toggle:focus {
@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    font-family: 'Trirong', serif; /* Trirong font for menu text */
+    font-family: 'Antic Didone', serif; /* Trirong font for menu text */
 }
 
 .popout-menu.open {
@@ -103,7 +103,7 @@ main {
     color: #000000; /* Black links */
     text-decoration: none;
     font-size: 1.2em;
-    font-family: 'Trirong', serif; /* Trirong font for menu links */
+    font-family: 'Antic Didone', serif; /* Trirong font for menu links */
 }
 
 .popout-menu ul li a:hover {
@@ -131,7 +131,7 @@ main {
 }
 
 .hero h1 {
-    font-family: 'Windsong', cursive; /* Windsong font for hero header */
+    font-family: 'Ballet', cursive; /* Windsong font for hero header */
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #000000; /* Black text */
@@ -139,7 +139,7 @@ main {
 }
 
 .hero p {
-    font-family: 'Times New Roman', serif; /* Times New Roman for hero text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for hero text */
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #000000; /* Black text */
@@ -154,7 +154,7 @@ main {
     font-weight: bold;
     border: 2px solid #000000; /* Black border */
     transition: background-color 0.3s, transform 0.3s;
-    font-family: 'Times New Roman', serif; /* Times New Roman for button text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for button text */
 }
 
 .hero .button:hover {
@@ -171,7 +171,7 @@ main {
 }
 
 #featured-listings h2 {
-    font-family: 'Trirong', serif; /* Trirong font for section headers */
+    font-family: 'Antic Didone', serif; /* Trirong font for section headers */
     font-size: 2.5em;
     margin-bottom: 40px; /* Added more space below header */
     color: #000000; /* Black text */
@@ -192,7 +192,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center; /* Centered content in cards */
-    font-family: 'Times New Roman', serif; /* Times New Roman for card text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for card text */
 }
 
 .listing-card:hover {
@@ -209,7 +209,7 @@ main {
 .listing-details {
     padding: 20px; /* Added more padding for better spacing */
     text-align: center; /* Center text within listing details */
-    font-family: 'Times New Roman', serif; /* Times New Roman for details text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for details text */
 }
 
 .listing-details h3 {
@@ -231,7 +231,7 @@ footer {
     padding: 20px;
     margin-top: 30px; /* Increased spacing above footer */
     font-size: 1.2em; /* Slightly larger text */
-    font-family: 'Times New Roman', serif; /* Times New Roman for footer text */
+    font-family: 'Antic Didone', serif; /* Times New Roman for footer text */
 }
 
 /* Responsive Enhancements */
