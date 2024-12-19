@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Lobster', 'Great Vibes', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Clean and elegant font */
     line-height: 1.6;
-    color: #FFFFFF;
-    background-color: #241773;
+    color: #241773; /* Deep purple text */
+    background-color: #FFFFFF; /* White background */
     overflow-x: hidden;
     padding-top: 97px;
     padding-bottom: 20px; /* Added bottom padding for spacing */
@@ -21,18 +21,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #241773;
-    color: #FFD700;
+    background-color: #FFFFFF; /* White background */
+    color: #241773; /* Deep purple text */
     padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-bottom: 3px solid #FFD700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #FFD700; /* Gold border */
     z-index: 1000;
     text-align: center; /* Center header text */
 }
 
 .header-content h1 {
     font-size: 2.5em;
-    color: #FFD700;
+    color: #241773; /* Deep purple text */
     margin: 0;
 }
 
@@ -46,7 +46,7 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1000;
-    color: #FFD700; /* Gold toggle icon */
+    color: #241773; /* Deep purple toggle icon */
 }
 
 .menu-toggle:focus {
@@ -60,14 +60,14 @@ body {
     right: -100%; /* Start off-screen */
     width: 250px;
     height: 100%;
-    background-color: #4A2883; /* Slightly lighter purple for the menu */
-    color: #FFFFFF; /* White text */
+    background-color: #F8F8F8; /* Light gray for the menu */
+    color: #241773; /* Deep purple text */
     transition: 0.3s ease-in-out;
     z-index: 999;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .popout-menu.open {
@@ -85,13 +85,13 @@ body {
 }
 
 .popout-menu ul li a {
-    color: #FFD700; /* Gold links */
+    color: #241773; /* Deep purple links */
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .popout-menu ul li a:hover {
-    color: #FFFFFF; /* White hover effect */
+    color: #FFD700; /* Gold hover effect */
 }
 
 /* Hero Section */
@@ -111,33 +111,35 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
+    text-align: center; /* Center text within hero section */
 }
 
 .hero h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
-    color: #FFD700;
+    color: #241773; /* Deep purple text */
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: #241773; /* Deep purple text */
 }
 
 .hero .button {
     padding: 15px 30px;
-    background-color: #FFD700;
-    color: #241773;
+    background-color: #FFD700; /* Gold button */
+    color: #241773; /* Deep purple text */
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    border: 2px solid #241773;
+    border: 2px solid #241773; /* Deep purple border */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .hero .button:hover {
-    background-color: #4A2883;
-    color: #FFD700;
+    background-color: #241773; /* Deep purple hover */
+    color: #FFD700; /* Gold text on hover */
     transform: scale(1.1);
 }
 
@@ -145,13 +147,13 @@ body {
 #featured-listings {
     padding: 60px 20px; /* Increased padding for spacing */
     text-align: center;
-    background-color: #241773;
+    background-color: #FFFFFF; /* White background */
 }
 
 #featured-listings h2 {
     font-size: 2.5em;
     margin-bottom: 40px; /* Added more space below header */
-    color: #FFD700;
+    color: #241773; /* Deep purple for section headers */
 }
 
 .listings-container {
@@ -162,8 +164,8 @@ body {
 }
 
 .listing-card {
-    background-color: #FFFFFF;
-    color: #241773;
+    background-color: #FFFFFF; /* White cards for contrast */
+    color: #241773; /* Deep purple text */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -184,23 +186,24 @@ body {
 
 .listing-details {
     padding: 20px; /* Added more padding for better spacing */
+    text-align: center; /* Center text within listing details */
 }
 
 .listing-details h3 {
     font-size: 1.8em; /* Larger for better readability */
-    color: #241773;
+    color: #241773; /* Deep purple text */
     margin-bottom: 10px;
 }
 
 .listing-details p {
     font-size: 1.2em;
-    color: #777;
+    color: #555; /* Muted purple for detail text */
 }
 
 /* Footer */
 footer {
-    background-color: #4A2883;
-    color: #FFFFFF;
+    background-color: #F8F8F8; /* Light gray background */
+    color: #241773; /* Deep purple text */
     text-align: center;
     padding: 20px;
     margin-top: 30px; /* Increased spacing above footer */
